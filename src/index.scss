@@ -1,0 +1,92 @@
+$primary-color: #A435F0;
+$secundary-color: #FFAF28;
+$secundary-color-hover:darken($color: $secundary-color, $amount: 10);
+$card: darken($color: $primary-color, $amount: 10);
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+body, html{
+    width: 100vw;
+}
+
+.app__content{
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.h1{
+    font-size: 40px;
+}
+
+.form{
+    margin: 30px 0px;
+
+    input[type='text']{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 400px;
+        padding: 8px;
+        font-size: 15px;
+
+    }
+
+    input[type='submit']{
+        width: 200px;
+        padding: 8px;
+        font-size: 15px;
+        background-color: $secundary-color;
+        border: none;
+        color: white;
+        border-radius: 6px;
+    
+        &:hover{
+            cursor: pointer;
+            background-color: $secundary-color-hover;
+        }
+    }
+}
+
+input{
+    &:focus{
+        outline: none;
+    }
+}
+
+
+.card{
+    margin: 0 auto;
+    width: 300px;
+    height: auto;
+    padding: 15px;
+    background-color:darken($color: $primary-color, $amount: 10);
+    border-radius: 8px;
+    color: whitesmoke;
+
+    h2{
+        margin: 20px 0px;
+        font-size: 30px;
+    }
+
+    img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .weather__temp_min_and_max{
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-around;
+        margin: 20px 0px;
+        font-size: 18px;
+    }
+
+
+}
